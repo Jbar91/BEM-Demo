@@ -17,10 +17,13 @@ BEM provides a modular structure to your CSS project. Because of its unique nami
 - Blocks: A standalone entity that is meaningful on its own. Examples:
 
   - `<header>` `<section>` `<menu>` `<checkbox>` `<input>`
+  - `.header` `.menu` `.checkbox`
 
 - Element: A part of a block that has no standalone meaning and is semantically tied to its block. Examples:
 
   - `menu item`, `list item`, `checkbox caption`, `header title`
+  - `.menu__item`, `list__item`, `.header__title`
 
 - Modifier: A flag on a block or element. Use them to change appearance or behavior. Examples:
   - `disabled`, `highlighted`, `checked`, `fixed`, `color yellow`
+  - `btn--disabled`, `text--highlighted`, `title--color-yellow`
