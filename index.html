@@ -6,11 +6,92 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="color-palette.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
   <title>BEM Demo</title>
 </head>
 
 <body>
+  <header class="header">
+    <h1 class="title">BEM</h1>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="list__item">List item 1</li>
+        <li class="list__item">List item 2</li>
+        <li class="list__item">List item 3</li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class="blocks-container container">
+      <div class="block-1">
+        <h2 class="block-1__title">This is a block title</h2>
+      </div>
+      <div class="block-2">
+        <figure class="block-2__figure">
+          <img src="cute-dog.jpg" alt="cute dog" class="figure__img">
+          <figcaption class="figure__caption">
+            Really cute dog
+          </figcaption>
+        </figure>
+      </div>
+      <div class="block-3">
+        <h2 class="block-3__title">Really cool article</h2>
+        <p class="block-3__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit beatae voluptatibus
+          perspiciatis in labore.
+          Et, amet nostrum totam architecto pariatur harum ducimus nesciunt maiores voluptatum doloribus doloremque
+          cumque, sint praesentium?</p>
+      </div>
+    </section>
+    <section class="elements-container container">
+      <div>
+        <p>Really dumb list</p>
+        <ul class="list-2">
+          <li class="list-2__item">Item 1</li>
+          <li class="list-2__item">Item 2</li>
+          <li class="list-2__item">
+            Item 3
+            <ul>
 
+              <li class="item__sub-item">Item 3.1</li>
+            </ul>
+          </li>
+          <li class="list-2__item">Item 4
+            <ul>
+
+              <li class="item__sub-item">Item 4.1</li>
+            </ul>
+          </li>
+          <li class="list-2__item">Item 5</li>
+        </ul>
+      </div>
+      <div>
+        <p>Way dumber list</p>
+        <ul class="list-1">
+          <li class="list-1__item">Item 1</li>
+          <li class="list-1__item">Item 2</li>
+          <li class="list-1__item">Item 3</li>
+        </ul>
+      </div>
+
+    </section>
+    <section class="modifiers-container container">
+      <div>
+        <button class="btn ">Button</button>
+        <button class="btn btn--size-l btn--dark">Large Button</button>
+        <button class="btn btn--size-xl btn--danger">Extra large Button</button>
+      </div>
+      <div>
+        <p class="paragraph">I don't have any color :'(</p>
+        <p class="paragraph paragraph--primary">I have the primary color</p>
+        <p class="paragraph paragraph--secondary">I have the secondary color</p>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <p>Made with ❤️ by your assistant teacher</p>
+    <p>All rights reserved by myself :)</p>
+  </footer>
 </body>
 
 </html>

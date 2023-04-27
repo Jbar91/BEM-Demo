@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-
 * {
   box-sizing: border-box;
 }
@@ -13,23 +12,20 @@ body {
 .header {
   display: flex;
   justify-content: space-evenly;
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .nav {
-    display: flex;
-    justify-content: center;
-
-    &__list {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      list-style: none;
-      padding: 0;
-    }
-  }
+}
+.header .title {
+  font-size: 2rem;
+}
+.header .nav {
+  display: flex;
+  justify-content: center;
+}
+.header .nav__list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
 }
 
 .main-container {
@@ -48,26 +44,22 @@ body {
 
 .block-1 {
   text-align: center;
-
-  &__title {
-    font-family: Arial, Helvetica, sans-serif;
-  }
+}
+.block-1__title {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .block-2 {
   padding: 1rem;
-
-  &__figure {
-    max-width: 400px;
-
-    .figure__img {
-      width: 100%;
-    }
-
-    .figure__caption {
-      text-align: center;
-    }
-  }
+}
+.block-2__figure {
+  max-width: 400px;
+}
+.block-2__figure .figure__img {
+  width: 100%;
+}
+.block-2__figure .figure__caption {
+  text-align: center;
 }
 
 .block-3 {
@@ -75,20 +67,17 @@ body {
   text-align: justify;
 }
 
-.elements-container {
-  p {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+.elements-container p {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .modifiers-container {
   align-items: center;
-
-  .paragraph {
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
+}
+.modifiers-container .paragraph {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .btn {
@@ -131,3 +120,5 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
+/*# sourceMappingURL=styles.css.map */
